@@ -5,11 +5,11 @@ function inputName() {
 
 function clickMe() {
     var randomNumber1 = Math.floor(Math.random() * 3) + 1;
-    var randomImage = "/images/img" + randomNumber1 + ".png";
+    var randomImage = "images/img" + randomNumber1 + ".png";
     document.querySelectorAll("img")[0].setAttribute("src", randomImage);
 
     var randomNumber2 = Math.floor(Math.random() * 3) + 1;
-    var randomImage = "/images/img" + randomNumber2 + ".png";
+    var randomImage = "images/img" + randomNumber2 + ".png";
     document.querySelectorAll("img")[1].setAttribute("src", randomImage);
 
     // "🤩" + player1 + " WIN👏";
