@@ -1,0 +1,30 @@
+body {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    text-align: center;
+}
+
+button {
+    color: black;
+    font-family: 'Acme', sans-serif;
+    background-color: bisque;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+h2,
+p {
+    color: bisque;
+    font-family: 'Pacifico', cursive;
+}
+
+h1 {
+    color: antiquewhite;
+    font-family: 'Acme', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
