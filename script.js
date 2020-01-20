@@ -12,9 +12,6 @@ function clickMe() {
     var randomImage = "images/img" + randomNumber2 + ".png";
     document.querySelectorAll("img")[1].setAttribute("src", randomImage);
 
-    // "🤩" + player1 + " WIN👏";
-    // "🤩" + player1 + " WIN👏";
-    // "🤩" + player1 + " WIN👏";
 
     const name1 = document.querySelectorAll("p")[1].innerHTML;
     const name2 = document.querySelectorAll("p")[2].innerHTML;
