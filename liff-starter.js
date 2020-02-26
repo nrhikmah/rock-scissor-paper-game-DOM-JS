@@ -125,18 +125,4 @@ function registerButtonHandlers() {
         }
     });
 
-    document.getElementById('sendMessageButton').addEventListener('click', function() {
-        if (!liff.isInClient()) {
-            sendAlertIfNotInClient();
-        } else {
-            liff.sendMessages([{
-                'type': 'text',
-                'text': "Thanks for using "
-            }]).then(function() {
-                window.alert('Thanks for using');
-            }).catch(function(error) {
-                window.alert('Error sending message: ' + error);
-            });
-        }
-    });
 }
