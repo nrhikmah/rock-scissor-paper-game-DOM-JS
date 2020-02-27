@@ -1,6 +1,6 @@
 window.onload = function() {
     const useNodeJS = false; // if you are not using a node server, set this value to false
-    const defaultLiffId = "1653872270-92KmO2xa"; // change the default LIFF value if you are not using a node server
+    const defaultLiffId = "1653890964-zPeRGXVE"; // change the default LIFF value if you are not using a node server
 
     // DO NOT CHANGE THIS
     let myLiffId = "";
@@ -112,5 +112,21 @@ function registerButtonHandlers() {
         }
     });
 
+}
 
+function sendAlertIfNotInClient() {
+    alert('This button is unavailable as LIFF is currently being opened in an external browser.');
+}
+
+/**
+ * Toggle specified element
+ * @param {string} elementId The ID of the selected element
+ */
+function toggleElement(elementId) {
+    const elem = document.getElementById(elementId);
+    if (elem.offsetWidth > 0 && elem.offsetHeight > 0) {
+        elem.style.display = 'none';
+    } else {
+        elem.style.display = 'block';
+    }
 }
