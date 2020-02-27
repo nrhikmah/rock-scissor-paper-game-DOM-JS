@@ -96,21 +96,21 @@ function initializeApp() {
 // }
 
 function registerButtonHandlers() {
-    document.getElementById('openWindowButton').addEventListener('click', function() {
+    function open() {
         liff.openWindow({
             url: 'https://nrhikmah.github.io/rock-scissor-paper-game-DOM-JS/', // Isi dengan Endpoint URL aplikasi web Anda
             external: true
         });
-    });
+    };
 
 
-    document.getElementById('closeWindowButton').addEventListener('click', function() {
+    function close() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
             liff.closeWindow();
         }
-    });
+    };
 
 }
 
